@@ -5,26 +5,17 @@ body {
     background-color: #f4f4f4;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
     margin-top: 20px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
 table {
-    width: 80%;
+    width: 90%; /* Ajusta el ancho de la tabla */
     margin: 20px auto;
     border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 
 table, th, td {
@@ -32,8 +23,9 @@ table, th, td {
 }
 
 th, td {
-    padding: 8px;
+    padding: 12px; /* Aumenta el padding para más espacio */
     text-align: left;
+    vertical-align: middle; /* Alinea verticalmente el contenido */
 }
 
 th {
@@ -41,11 +33,13 @@ th {
 }
 
 form {
-    width: 50%;
+    width: 90%; /* Ajusta el ancho del formulario */
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ddd;
     background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 form label {
@@ -54,10 +48,11 @@ form label {
 }
 
 form input, form textarea {
-    width: 100%;
+    width: calc(100% - 16px); /* Ajusta el ancho para el padding */
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 form button {
@@ -66,8 +61,28 @@ form button {
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 form button:hover {
     background-color: #218838;
+}
+
+/* Estilos para las imágenes pequeñas */
+.icon {
+    width: 24px;  /* Ajusta el ancho de la imagen */
+    height: 24px; /* Ajusta la altura de la imagen */
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+    margin-right: 8px; /* Espacio entre la imagen y el texto */
+}
+
+.console {
+    width: 90%; /* Aumenta el ancho del contenedor */
+    max-width: 1200px; /* Ajusta el ancho máximo del contenedor */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
